@@ -135,16 +135,7 @@ sum(sample(1:6, size=2, replace=TRUE))</code></pre>
 <pre class="r"><code># same thing with %&gt;% 
 sample(6, size=2, replace=TRUE) %&gt;% sum()</code></pre>
 <pre><code>## [1] 4</code></pre>
-<pre class="r"><code># simulate rolling two dice 100 times by updating the sample &quot;space&quot;
-sample(2:12, size=100, replace=TRUE)</code></pre>
-<pre><code>##   [1]  4  9  4  3  2  4 11 12  6  2  2  3  8 11 10 11 11 10  2  7  5  8 12
-##  [24]  4  6  4  8  6 11  3 10 10  8  2  9  3  4  3  2  9  4  3  2  9  2 11
-##  [47]  2  7  9  9  9  4 12  9  2  3  7  7  4  2  8  6  7 11 10 10 12  5  3
-##  [70]  4  3  4 11  4 10  8  8  3  2 12 11  8  5  3 10  9  9  6  2  5  9  9
-##  [93]  6  8 10 11  2  5  9 12</code></pre>
-<pre class="r"><code># proportion of &quot;snake-eyes&quot; in 1000 rolls
-mean(sample(2:12, size = 1000, replace = TRUE) == 2)</code></pre>
-<pre><code>## [1] 0.094</code></pre>
+
 <pre class="r"><code># We can use the replicate() function to replicate samples. The replicate() 
 # function allows you to replicate an expression as many times as you specify. 
 # The basix syntax is replicate(n, expr) where n is the number of replications 
